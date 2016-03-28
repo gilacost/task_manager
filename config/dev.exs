@@ -38,8 +38,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :home_work_manager, HomeWorkManager.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "pepito",
-  password: "pepito",
+  username: "postgres",
+  password: "postgres",
   database: "home_work_manager",
   hostname: "192.168.99.100",
   pool_size: 10
