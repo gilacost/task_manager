@@ -14,12 +14,12 @@ defmodule HomeWorkManager.RegistrationController  do
 
         conn
         |> put_status(:created)
-        |> render(PhoenixTrello.SessionView, "show.json", jwt: jwt, user: user)
+        |> render(HomeWorkManager.SessionView, "show.json", jwt: jwt, user: user)
 
       {:error, changeset} ->
         conn
         |> put_status(:unprocessable_entity)
-        |> render(PhoenixTrello.RegistrationView, "error.json", changeset: changeset)
+        |> render(HomeWorkManager.RegistrationView, "error.json", changeset: changeset)
     end
   end
 end
